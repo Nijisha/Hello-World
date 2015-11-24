@@ -26,6 +26,8 @@ public class Demo {
 		int b;
 		
 		System.out.println("Hello World");
+		System.out.println("Hello Mindtree Demo");
+	
 		
 		
 
