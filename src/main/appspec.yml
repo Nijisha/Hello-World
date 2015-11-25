@@ -2,7 +2,7 @@ version: 0.0
  
 os: linux
 files:
-   - source: content/test1.war
+   - source: content/HelloWorldMaven.war
      destination: /usr/local/apache-tomcat-7.0.54/webapps
 permissions:
    - object: /usr/local/apache-tomcat-7.0.54/webapps
@@ -14,5 +14,5 @@ permissions:
        - file
 hooks:
    AfterInstall:
-   - location: script/restarttomcat.sh
+   - location: /src/main/script/restarttomcat.sh
      runas: root
