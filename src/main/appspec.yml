@@ -1,0 +1,18 @@
+version: 0.0
+ 
+os: linux
+files:
+   - source: content/test1.war
+     destination: /usr/local/apache-tomcat-7.0.54/webapps
+permissions:
+   - object: /usr/local/apache-tomcat-7.0.54/webapps
+     pattern: "**"
+     owner: tomcat
+     group: tomcat
+     mode: 755
+     type:
+       - file
+hooks:
+   AfterInstall:
+   - location: script/restarttomcat.sh
+     runas: root
