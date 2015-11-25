@@ -2,7 +2,7 @@ version: 0.0
  
 os: linux
 files:
-   - source: content/HelloWorldMaven.war
+   - source: /HelloWorldMaven.war
      destination: /usr/local/apache-tomcat-7.0.54/webapps
 permissions:
    - object: /usr/local/apache-tomcat-7.0.54/webapps
